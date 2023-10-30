@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\contens;
 use Illuminate\Http\Request;
+use Illuminate\Mail\Mailables\Content;
 
 class HomeController extends Controller
 {
@@ -20,9 +22,13 @@ class HomeController extends Controller
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
+     * @return app\Models\contens;
      */
     public function index()
     {
-        return view('home');
+        return view('home',[
+            "title" => "home",
+            "posts" => contens::all()
+        ]);
     }
 }

@@ -1,0 +1,33 @@
+.blog{
+
+    background: rgb(214, 214, 214);
+    color: rgb(0, 0, 0);
+    margin-bottom: 100px;
+    padding: 10px 20px 0px;
+
+    
+}
+
+.edit{
+    background: rgb(214, 214, 214);
+
+  
+
+}
+
+table {
+    width:100%;
+    border-collapse: collapse;
+
+    
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+ 
+.btnn {
+    width: 120px;
+    text-align: center;
+}
